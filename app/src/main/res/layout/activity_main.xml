@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5F1FB"
+    android:padding="0dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="GreenFresh"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        android:padding="12dp" />
+
+    <!-- Tombol Tambah -->
+    <Button
+        android:id="@+id/btn_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah List"
+        android:textColor="#fff"
+        android:backgroundTint="#69CD63"
+        android:layout_marginTop="16dp" />
+
+    <!-- Daftar tanaman -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tanaman"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
